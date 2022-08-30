@@ -1,0 +1,107 @@
+.container {
+  width: 100%;
+}
+
+.main {
+  max-width: 46rem;
+
+  margin : 0 auto;
+  padding: 0 1rem;
+
+  margin-top: -1.6875rem;
+}
+
+.newTask {
+  display: flex;
+
+  gap: 0.5rem;
+}
+
+.newTask button {
+  background-color: var(--blue-dark);
+  color           : var(--gray-100);
+
+  display        : flex;
+  align-items    : center;
+  justify-content: center;
+  gap            : 0.5rem;
+
+  padding: 1rem;
+
+  border-radius: 8px;
+
+  font-size  : 0.875rem;
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition: background-color 0.2s;
+}
+
+.newTask button:hover {
+  background-color: var(--blue);
+}
+
+.tasks {
+  margin-top: 4rem;
+}
+
+.info {
+  display        : flex;
+  align-items    : center;
+  justify-content: space-between;
+
+  font-size  : 0.875rem;
+  font-weight: bold;
+}
+
+.info div:first-child {
+  color: var(--blue);
+}
+
+.info div:last-child {
+  color: var(--purple);
+}
+
+.info span {
+  margin-left: 0.5rem;
+
+  font-size: 0.75rem;
+
+  color     : var(--gray-200);
+  background: var(--gray-400);
+
+  border-radius: 999px;
+
+  padding: 0.125rem 0.5rem;
+}
+
+.emptyTasksList {
+  min-height: 15.25rem;
+
+  padding: 4rem 1.5rem;
+
+  border-top: 1px solid var(--gray-400);
+}
+
+.emptyTasksList img {
+  margin-bottom: 1rem;
+}
+
+.tasksList {
+  display        : flex;
+  flex-direction : column;
+  align-items    : center;
+  justify-content: center;
+
+  margin-top: 1.5rem;
+  gap       : 0.75rem;
+}
+
+
+
+@media (max-width: 768px) {
+  html {
+    font-size: 87.5%;
+  }
+}
